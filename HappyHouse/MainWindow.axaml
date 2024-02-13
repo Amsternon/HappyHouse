@@ -1,0 +1,31 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Icon="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/Register.ico"
+        mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="212"
+        MaxHeight="212"
+        MaxWidth="300"
+        WindowStartupLocation="CenterScreen"
+        x:Class="HappyHouse.MainWindow"
+        Title="Добро пожаловать! в HappyHouse">
+    <Grid>
+        <Image Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/Menu.jpg"></Image>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Margin = "90 10 0 0" FontSize = "20" FontWeight="Bold"> Авторизация</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock VerticalAlignment="Center" FontWeight="ExtraBold" Margin=" 20 10 0 10">Логин:</TextBlock>
+                <TextBox Background="Aquamarine"  Name="Login" Width="200" Margin="10 10 0 10" Watermark="Введите логин"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock VerticalAlignment="Center" FontWeight="ExtraBold" Margin=" 10 10 0 30">Пароль:</TextBlock>
+                <TextBox Background="Aquamarine" Name="Password" Width="200" Margin="10 10 0 30" PasswordChar="*" Watermark="Введите пароль"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Background="Black" Foreground="Aquamarine" Name="Enter" Content="Вход" Click="Authorization" Margin=" 10 10 15 10"></Button>
+                <Button Background="Black" Foreground="Aquamarine" Name="Register" Content="Регистрация" Click="Registration" Margin=" 10 10 15 10"></Button>
+                <Button Background="Black" Foreground="Aquamarine" Name="Exit" Content="Выход" Click="Exit_PR" Margin=" 10 10 15 10"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

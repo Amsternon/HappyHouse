@@ -1,0 +1,61 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Icon="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/user.ico"
+        mc:Ignorable="d" d:DesignWidth="780" d:DesignHeight="460"
+        MaxWidth="780"
+        MaxHeight="460"
+        x:Class="HappyHouse.Tables.ClinUser"
+        Title="Клиенты">
+    <Grid>
+        <Image Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/Client.jpg" Width="1000" Height="550"/>
+        <StackPanel Orientation="Vertical">
+            <TextBlock Margin = "40 10 0 0" FontSize = "20" FontWeight="Bold"> Таблица "Клиенты"</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock VerticalAlignment="Center" Margin = "40 10 0 0"> Поиск по ФИО заемщика: </TextBlock>
+                <TextBox Name="Search_Login" Width="200" Margin ="15 10 0 0" TextChanged="SearchLogin"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel Margin="30 12 00 0">
+                        <Button Name="Add" Click="AddData">
+                            <Image Width="25" Height="25" Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/ClientAdd.ico"></Image>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Margin="10 12 00 0">
+                        <Button Name="Update" Click = "Edit">
+                            <Image Width="25" Height="25" Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/red.ico"></Image>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Margin="10 12 00 0">
+                        <Button  Name="Delete" Click="Del">
+                            <Image Width="25" Height="25" Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/trash.ico"></Image>
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        <DataGrid Name="DataGrid" x:CompileBindings="False" Margin ="10 20 0 0" Height="250">
+            <DataGrid.Columns>
+                <DataGridTextColumn MaxWidth="140" Header="Идентификатор" Binding="{Binding ID}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding Surname}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Имя" Binding="{Binding Name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Логин" Binding="{Binding Login}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Пароль" Binding="{Binding Password}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Телефон" Binding="{Binding Telephone}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Почта" Binding="{Binding email}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+            <StackPanel Orientation="Horizontal" Margin="30 20 20 0">
+                <Button Name="Back" Click="Back_OnClick">
+                    <Image Width="25" Height="25" Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/back.ico"></Image>
+                </Button>
+                <StackPanel Margin="20 0 00 0">
+                <Button Name="Reset" Click="Reset_OnClick">
+                    <Image Width="25" Height="25" Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/reset.ico"></Image>
+                </Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,38 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="HappyHouse.CRUD.CRUD_Goods"
+        Title="CRUD_Goods">
+    <Grid>
+        <UniformGrid Columns="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Margin = "90 10 0 0" FontSize = "20" FontWeight="Bold">Действия с данными</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Код товара: </TextBlock>
+                <TextBox Name="id" x:CompileBindings="False" Text="{Binding ID}" Width="200" Height="5" Margin = "10 0 0 0" Watermark="Индивидуальный номер"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Наименование: </TextBlock>
+                <TextBox Name="name" x:CompileBindings="False" Text="{Binding Name}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Введите наименование"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Материал: </TextBlock>
+                <TextBox Name="namer" x:CompileBindings="False" Text="{Binding Namer}" Width="200" Height="5" Margin = "90 0 0 0" Watermark="Используемый никнейм"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Цвет: </TextBlock>
+                <TextBox Name="Named" x:CompileBindings="False" Text="{Binding Named}" Width="200" Height="5" Margin = "75 0 0 0" Watermark="Используемый никнейм"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Цена: </TextBlock>
+                <TextBox Name="price" x:CompileBindings="False" Text="{Binding price}" Width="200" Height="5" Margin = "75 0 0 0" Watermark="Стоимость"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Button Name="Save" Content="Сохранить" Click="Save_OnClick"  Margin = "0 15 0 20"></Button>
+                <Button Name="Back" Content="Назад" Click="GoBack"  Margin = "165 15 0 20"></Button>
+            </StackPanel>
+        </UniformGrid>
+    </Grid>
+</Window>

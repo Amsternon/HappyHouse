@@ -1,0 +1,50 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        Icon="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/Register.ico"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="600"
+        x:Class="HappyHouse.Registration"
+        Title="Регистрация пользователя"
+        MaxHeight="600"
+        WindowStartupLocation="CenterScreen"
+        MaxWidth="500">
+    <Grid>
+        <Image Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/Sotryd.png"></Image>
+        <UniformGrid Columns="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Margin = "90 10 0 0" FontSize = "20" FontWeight="Bold"> Регистрация</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Идентификатор: </TextBlock>
+                <TextBox Name="id" x:CompileBindings="False" Width="200" Height="5" Margin = "10 0 0 0" Watermark="Индивидуальный номер"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Фамилия: </TextBlock>
+                <TextBox Name="Surname" x:CompileBindings="False" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Введите фамилию"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Имя: </TextBlock>
+                <TextBox Name="Name" x:CompileBindings="False" Width="200" Height="5" Margin = "90 0 0 0" Watermark="Введите имя"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Логин: </TextBlock>
+                <TextBox Name="Login" x:CompileBindings="False" Width="200" Height="5" Margin = "75 0 0 0" Watermark="Используемый никнейм"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Пароль: </TextBlock>
+                <TextBox Name="Password" x:CompileBindings="False" Width="200" Height="5" Margin = "65 0 0 0" Watermark="Введите пароль"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Телефон: </TextBlock>
+                <TextBox Name="Telephone" x:CompileBindings="False" Width="200" Height="5" Margin = "75 0 0 0" Watermark="Телефон"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Почта: </TextBlock>
+                <TextBox Name="email" x:CompileBindings="False" Width="200" Height="5" Margin = "75 0 0 0" Watermark="Почта"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="Save" Content="Сохранить" Click="Reg"  Margin = "0 15 0 20"></Button>
+                <Button Name="Back" Content="Назад" Click="GoBack"  Margin = "165 15 0 20"></Button>
+            </StackPanel>
+        </UniformGrid>
+    </Grid>
+</Window>

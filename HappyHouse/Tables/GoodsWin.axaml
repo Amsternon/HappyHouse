@@ -1,0 +1,64 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Icon="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/posyd.ico"
+        mc:Ignorable="d" d:DesignWidth="645" d:DesignHeight="460"
+        MaxWidth="645"
+        MaxHeight="460"
+        x:Class="HappyHouse.Tables.GoodsWin"
+        Title="Кухонная утварь HappyHouse">
+   <Grid>
+       <Image Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource\posyda.jpg" Width="1000" Height="550"/>
+       <StackPanel Orientation="Vertical">
+            <TextBlock Foreground="Khaki" Margin = "10 10 0 0" FontSize = "20" FontWeight="Bold"> Таблица "Посуда"</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Foreground="Khaki" VerticalAlignment="Center" Margin = "10 10 0 0"> Поиск по наименованию Посуды: </TextBlock>
+                <TextBox Name="Search_Goods" Width="200" Margin ="65 10 0 0" TextChanged="SearchGoods"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel Margin="10 12 00 0">
+                        <Button Background="Aqua" Name="Add" Click="AddData">
+                            <Image Width="25" Height="25" Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/OrdAdd.ico"></Image>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Margin="10 12 00 0">
+                        <Button Background="Aqua" Click = "Edit">
+                            <Image Width="25" Height="25" Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/red.ico"></Image>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Margin="10 12 00 0">
+                        <Button Background="Aqua" Click="Del">
+                            <Image Width="25" Height="25" Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/trash.ico"></Image>
+                        </Button>
+                    </StackPanel>
+
+                </StackPanel>
+            </StackPanel>
+
+        <DataGrid Background="DimGray" Name="DataGrid" x:CompileBindings="False" Margin ="10 20 0 0" Height="250">
+            <DataGrid.Columns>
+                <DataGridTextColumn Foreground="White" Header="Код товара" Binding="{Binding ID}"></DataGridTextColumn>
+                <DataGridTextColumn Foreground="White" Header="Наименование" Binding="{Binding Name}"></DataGridTextColumn>
+                <DataGridTextColumn Foreground="White" Header="Материал" Binding="{Binding Namer}"></DataGridTextColumn>
+                <DataGridTextColumn Foreground="White" Header="Цвет" Binding="{Binding Named}"></DataGridTextColumn>
+                <DataGridTextColumn Foreground="White" Header="Цена" Binding="{Binding price}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+            <StackPanel Orientation="Horizontal" Margin="10 20 20 0">
+                <Button Background="Aqua" Click="Back_OnClick">
+                    <Image Width="25" Height="25" Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/back.ico"></Image>
+                </Button>
+                <StackPanel Margin="10 0 00 0">
+                <Button Background="Aqua"  Click="Reset_OnClick">
+                    <Image Width="25" Height="25" Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/reset.ico"></Image>
+                </Button>
+                </StackPanel>
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="HappyHouse/App.axaml" value="HappyHouse/HappyHouse.csproj" />
+        <entry key="HappyHouse/CRUD/CRUD_ClinUser.axaml" value="HappyHouse/HappyHouse.csproj" />
+        <entry key="HappyHouse/CRUD/CRUD_Goods.axaml" value="HappyHouse/HappyHouse.csproj" />
+        <entry key="HappyHouse/CRUD/CRUD_OrderWin.axaml" value="HappyHouse/HappyHouse.csproj" />
+        <entry key="HappyHouse/CRUD/CRUD_Sotryd.axaml" value="HappyHouse/HappyHouse.csproj" />
+        <entry key="HappyHouse/CRUD/СRUD_tablewares.axaml" value="HappyHouse/HappyHouse.csproj" />
+        <entry key="HappyHouse/MainWindow.axaml" value="HappyHouse/HappyHouse.csproj" />
+        <entry key="HappyHouse/Registration.axaml" value="HappyHouse/HappyHouse.csproj" />
+        <entry key="HappyHouse/Tables/ClinUser.axaml" value="HappyHouse/HappyHouse.csproj" />
+        <entry key="HappyHouse/Tables/GoodsWin.axaml" value="HappyHouse/HappyHouse.csproj" />
+        <entry key="HappyHouse/Tables/Order.axaml" value="HappyHouse/HappyHouse.csproj" />
+        <entry key="HappyHouse/Tables/OrderWin.axaml" value="HappyHouse/HappyHouse.csproj" />
+        <entry key="HappyHouse/Tables/Worker.axaml" value="HappyHouse/HappyHouse.csproj" />
+        <entry key="HappyHouse/Tables/sotrydnik.axaml" value="HappyHouse/HappyHouse.csproj" />
+        <entry key="HappyHouse/Tables/tableware.axaml" value="HappyHouse/HappyHouse.csproj" />
+        <entry key="HappyHouse/Top.axaml" value="HappyHouse/HappyHouse.csproj" />
+        <entry key="HappyHouse/icon.axaml" value="HappyHouse/HappyHouse.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
