@@ -1,14 +1,16 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        Icon="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/Register.ico"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="600"
         x:Class="HappyHouse.CRUD.CRUD_ClinUser"
         Title="Регистрация пользователя"
         MaxHeight="600"
         WindowStartupLocation="CenterScreen"
         MaxWidth="500">
     <Grid>
+        <Image Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/Sotryd.png"></Image>
         <UniformGrid Columns="1" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Margin = "90 10 0 0" FontSize = "20" FontWeight="Bold"> Регистрация</TextBlock>
             <StackPanel Orientation="Horizontal">
@@ -32,11 +34,11 @@
                 <TextBox Name="password" x:CompileBindings="False" Text="{Binding Password}" Width="200" Height="5" Margin = "65 0 0 0" Watermark="Введите пароль"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <TextBlock Margin = "0 25 0 0">Почта: </TextBlock>
+                <TextBlock Margin = "0 25 0 0">Телефон: </TextBlock>
                 <TextBox Name="telephone" x:CompileBindings="False" Text="{Binding Telephone}" Width="200" Height="5" Margin = "75 0 0 0" Watermark="Телефон"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <TextBlock Margin = "0 25 0 0">Адрес: </TextBlock>
+                <TextBlock Margin = "0 25 0 0">Почта: </TextBlock>
                 <TextBox Name="email" x:CompileBindings="False" Text="{Binding email}" Width="200" Height="5" Margin = "75 0 0 0" Watermark="Электронная почта"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">

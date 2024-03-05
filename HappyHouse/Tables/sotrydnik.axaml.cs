@@ -57,7 +57,7 @@ public partial class sotrydnik : Window
     private void SearchGoods(object? sender, TextChangedEventArgs e)
     {
         var gds = sotryd;
-        gds = gds.Where(x => x.Name.Contains(Search_Goods.Text)).ToList();
+        gds = gds.Where(x => x.Surname.Contains(Search_Goods.Text)).ToList();
         DataGrid.ItemsSource = gds;
     }
 
@@ -90,7 +90,7 @@ public partial class sotrydnik : Window
             cmd.ExecuteNonQuery();
             conn.Close();
             sotryd.Remove(usr);
-            ShowTable(fullTable);
+            ShowTable("SELECT worker.ID, worker.Surname, worker.Name, worker.Otchestvo, worker.Telephone, worker.email, jobs.Names FROM worker JOIN jobs ON worker.Dolzhnost = jobs.ID");
         }
         catch (Exception ex)
         {

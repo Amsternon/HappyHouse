@@ -1,16 +1,20 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        Icon="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/Register.ico"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="600"
+        MaxWidth="450"
+        MaxHeight="650"
         x:Class="HappyHouse.CRUD.CRUD_Goods"
-        Title="CRUD_Goods">
+        Title="Действие с данными">
     <Grid>
+        <Image Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/Sotryd.png"></Image>
         <UniformGrid Columns="1" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Margin = "90 10 0 0" FontSize = "20" FontWeight="Bold">Действия с данными</TextBlock>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin = "0 25 0 0">Код товара: </TextBlock>
-                <TextBox Name="id" x:CompileBindings="False" Text="{Binding ID}" Width="200" Height="5" Margin = "10 0 0 0" Watermark="Индивидуальный номер"></TextBox>
+                <TextBox Name="id" x:CompileBindings="False" Text="{Binding ID}" Width="200" Height="5" Margin = "82 0 0 0" Watermark="Индивидуальный номер"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin = "0 25 0 0">Наименование: </TextBlock>
@@ -22,11 +26,11 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin = "0 25 0 0">Цвет: </TextBlock>
-                <TextBox Name="Named" x:CompileBindings="False" Text="{Binding Named}" Width="200" Height="5" Margin = "75 0 0 0" Watermark="Используемый никнейм"></TextBox>
+                <TextBox Name="Named" x:CompileBindings="False" Text="{Binding Named}" Width="200" Height="5" Margin = "125 0 0 0" Watermark="Используемый никнейм"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin = "0 25 0 0">Цена: </TextBlock>
-                <TextBox Name="price" x:CompileBindings="False" Text="{Binding price}" Width="200" Height="5" Margin = "75 0 0 0" Watermark="Стоимость"></TextBox>
+                <TextBox Name="price" x:CompileBindings="False" Text="{Binding price}" Width="200" Height="5" Margin = "125 0 0 0" Watermark="Стоимость"></TextBox>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal">

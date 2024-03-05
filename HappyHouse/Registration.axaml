@@ -35,7 +35,7 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin = "0 25 0 0">Телефон: </TextBlock>
-                <TextBox Name="Telephone" x:CompileBindings="False" Width="200" Height="5" Margin = "75 0 0 0" Watermark="Телефон"></TextBox>
+                <TextBox Name="Telephone" x:CompileBindings="False" Width="200" Height="5" Margin = "57 0 0 0" Watermark="Телефон"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin = "0 25 0 0">Почта: </TextBlock>
